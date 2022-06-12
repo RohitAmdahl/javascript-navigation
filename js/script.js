@@ -1,16 +1,13 @@
-
+const burger = document.querySelector(".burger")
+const nav = document.querySelector(".links")
 
   const openMenu = function() {
-  const burger = document.querySelector(".burger")
-  const nav = document.querySelector(".links")
- 
   burger.addEventListener("click", function () {
     nav.classList.toggle("nav-active")
     
- 
   });
 
-  burger.classList.toggle("toggle")
+  // burger.classList.toggle("toggle")
 }
 
 openMenu();
