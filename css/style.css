@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+.cat{
+  max-width: 150px;
+  width: 100%;
+}
 
 
 .logo{
   font-family: 'Dancing Script', cursive;
   letter-spacing: 5px;
-  color: aliceblue;
+  display: flex;
+  align-items: center;
 }
 
  nav{
@@ -17,8 +22,6 @@
   justify-content: space-around;
   align-items: center;
   background-color: #efb4b4;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
 }
 
@@ -26,13 +29,63 @@ ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
-  font-size: 18px;
-  
+  width: 30%; 
 }
 
 li{
  list-style: none;
-
-
+ font-size: 22px;
 } 
+
+li:hover{
+  color: #640c0c;
+  cursor: pointer;
+}
+
+.burger div{
+display: none;
+  
+}
+
+
+@media  screen and (max-width: 768px) {
+  body{
+     overflow-x:hidden; 
+  }
+  
+  
+  ul{
+    width: 50%; 
+  }
+
+  .burger div{
+    width: 25px;
+    height: 4px;
+    background-color: #2a2828;
+    margin: 5px;
+    display: block;
+    cursor: pointer;
+  }
+  ul {
+    position: absolute;
+    right: 0;
+    height: 82vh;
+    top: 18vh;
+    background-color: #efb4b4;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+   
+  }
+
+  .nav-active{
+    transform: translateX(0%);
+  }
+
+  .logo{
+    justify-content: center;
+    align-items: center;
+  }
+
+}
