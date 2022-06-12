@@ -1,0 +1,38 @@
+*{
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.logo{
+  font-family: 'Dancing Script', cursive;
+  letter-spacing: 5px;
+  color: aliceblue;
+}
+
+ nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #efb4b4;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  font-size: 18px;
+  
+}
+
+li{
+ list-style: none;
+
+
+} 
