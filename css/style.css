@@ -48,6 +48,9 @@ display: none;
 }
 
 
+
+
+
 @media  screen and (max-width: 768px) {
   body{
      overflow-x:hidden; 
@@ -87,5 +90,7 @@ display: none;
     justify-content: center;
     align-items: center;
   }
+
+
 
 }
