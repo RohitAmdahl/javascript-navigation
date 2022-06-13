@@ -21,8 +21,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px 0px;
-  background: #faebd7;
-
 
 }
 
@@ -54,6 +52,13 @@ display: none;
 }
  
 
+
+@media  screen and (max-width: 1000px) {
+  
+  ul{
+    width: 46%; 
+  }
+  }
 
 
 
@@ -102,7 +107,7 @@ display: none;
   .burger.close{
     transform: rotate(180deg);
   }
-  
+
     .burger.close .line1{
       transform: rotate(45deg) translate(7px, 7px);
   }
