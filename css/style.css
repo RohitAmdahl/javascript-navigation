@@ -11,8 +11,7 @@
 
 
 .logo{
-  font-family: 'Dancing Script', cursive;
-  letter-spacing: 5px;
+
   display: flex;
   align-items: center;
 }
@@ -21,7 +20,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #efb4b4;
+  padding: 20px 0px;
+  background: #faebd7;
+
 
 }
 
@@ -73,8 +74,8 @@ display: none;
     position: absolute;
     right: 0;
     height: 82vh;
-    top: 18vh;
-    background-color: #efb4b4;
+    top: 9vh;
+    background-color:#faebd7;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
