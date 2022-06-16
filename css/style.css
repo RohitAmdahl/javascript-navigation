@@ -2,7 +2,6 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 .cat{
@@ -111,7 +110,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9px 0px;
+  padding: 9px 10px;
 }
 
 .footer{
