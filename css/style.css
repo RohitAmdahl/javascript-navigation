@@ -2,6 +2,7 @@
   margin: 0 ;
   padding: 0;
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 .cat{
@@ -50,6 +51,75 @@ display: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
+
+.headingimg{
+  background-image: url(/pictures/new-york.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+.Api-calling{
+  font-size: 2rem;
+  color: #2a2828;
+  padding: 25px;
+  background-color: #92b4c0;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  height: 250px;
+  background-color: #e6e6e6eb;
+  display: grid;
+  margin-top: 18px;
+  transition: transform 250ms, ease-in;
+}
+
+.card:hover{
+  box-shadow:
+  1.6px 1.6px 1.2px rgba(0, 0, 0, -0.001),
+  3.4px 3.4px 2.7px rgba(0, 0, 0, 0.001),
+  5.8px 5.8px 4.6px rgba(0, 0, 0, 0.005),
+  8.7px 8.7px 6.9px rgba(0, 0, 0, 0.01),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.016),
+  17.7px 17.7px 14.2px rgba(0, 0, 0, 0.023),
+  25.1px 25.1px 20.1px rgba(0, 0, 0, 0.031),
+  36.5px 36.5px 29.2px rgba(0, 0, 0, 0.04),
+  56.3px 56.3px 45px rgba(0, 0, 0, 0.052),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 25px;
+  /* max-width: 900px;
+  margin: 0 auto; */
+
+}
+
+.nation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: #2a2828;
+  color: #ffffff;
+}
  
 
 
@@ -58,6 +128,7 @@ display: none;
   ul{
     width: 46%; 
   }
+
   }
 
 
@@ -69,6 +140,9 @@ display: none;
      overflow-x:hidden; 
   }
   
+  .cards {
+    grid-template-columns: repeat(350px 350px);
+  }
   
   ul{
     width: 50%; 
@@ -120,4 +194,19 @@ display: none;
       transform: rotate(-45deg) translate(5px, -5px);
   }
 
+}
+
+
+@media  screen and (max-width: 420px) {
+  body{
+     overflow-x:hidden; 
+  }
+  
+  .cards {
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 25px;
+  }
+  .card {
+    margin: 0 auto;
+  }
 }

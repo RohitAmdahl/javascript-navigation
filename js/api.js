@@ -18,12 +18,19 @@ async function pokemon() {
     for (let i = 0; i < property.length; i++) {
       console.log(property[i].ID);
 
-      card.innerHTML += `  
-                        <p class="card"> Population: ${property[i].Population}</p>
-                         <p> Year: ${property[i].Year}</p>
-                         
+      card.innerHTML += ` <div class="card">
+                          <h1> Population: ${property[i].Population} </h2>
+                            <div class="nation">
+                              <p class="nation"> Year: ${property[i].Year}</p>
+                              <p class="nation"> Nation: ${property[i].Nation}</p>
+                            </div>
+                              <p class="nation"> ID Nation: ${property[i]["ID Nation"]}</p>
+                            <div class="nation">
+                              <h4> Slug Nation: ${property[i]["Slug Nation"]}</h4>
+                            </div>
+                         </div>`;
                           
-                          `
+                          
       
     }
  
