@@ -76,9 +76,9 @@ h1{
   width: 300px;
   height: 250px;
   background-color: #e6e6e6eb;
-
   margin-top: 18px;
-  transition: transform 250ms, ease-in;
+  margin-bottom: 18px;
+  transition-duration: 500ms; 
 }
 
 .card:hover{
