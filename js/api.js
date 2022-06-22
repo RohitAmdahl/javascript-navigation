@@ -29,8 +29,7 @@ async function pokemon() {
                               <h4> Slug Nation: ${property[i]["Slug Nation"]}</h4>
                             </div>
                          </div>`;
-                          
-                          
+                     
       
     }
  
