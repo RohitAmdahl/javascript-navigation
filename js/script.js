@@ -14,3 +14,9 @@ const nav = document.querySelector(".links")
 
  openMenu();
 
+// const apiCallingHeading = document.querySelector("h1")
+// console.log(apiCallingHeading);
+
+
+
+
