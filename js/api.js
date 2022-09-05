@@ -2,16 +2,16 @@ const url = "https://datausa.io/api/data?drilldowns=Nation&measures=Population";
 console.log(url);
 
 const card = document.querySelector(".cards");
-console.log(card);
+//console.log(card);
 
 async function pokemon() {
 
   try {
 
     const response = await fetch(url);
-    console.log(response);
+    //console.log(response);
     const results = await response.json();
-    console.log(results);
+    //console.log(results);
     const property = results.data;
     console.log(property);
 
